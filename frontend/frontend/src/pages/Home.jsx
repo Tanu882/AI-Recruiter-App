@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -5,9 +7,11 @@ function Home() {
       {/* Navbar */}
       <nav className="flex justify-between items-center px-10 py-5">
         <h1 className="text-2xl font-bold">AI Recruiter</h1>
+        <Link to="/login">
         <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition">
           Login
         </button>
+      </Link>
       </nav>
 
       {/* Hero Section */}
@@ -20,9 +24,11 @@ function Home() {
           Replace outdated resumes with structured, AI-generated candidate profiles.
         </p>
 
+        <Link to="/builder">
         <button className="mt-8 bg-black text-white px-8 py-3 rounded-xl text-lg hover:bg-gray-800 transition">
           Get Started
         </button>
+</Link>
       </div>
 
       {/* Features Section */}
