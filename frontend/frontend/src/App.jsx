@@ -1,8 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-black text-white text-3xl">
-      AI Recruiter App 🚀
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
